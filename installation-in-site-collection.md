@@ -8,7 +8,7 @@
 
 - Activate the upload solution
 
-- Activate site feature manually, go to **Site Settings > Site Features > Adobe eSign Workflow Actions > Activate"
+- Activate site feature manually, go to **Site Settings > Site Features > Adobe eSign Workflow Actions > Activate".  Do the same for Adobe eSign Workflows Config List.
 
     ![alt text](screenshots/office-365-feature-activate.PNG "Activate Site Feature")
     

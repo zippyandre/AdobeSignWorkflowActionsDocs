@@ -17,7 +17,7 @@
 
 ###How to populate the list:
 
-  - Find eSignConfig list in Site Contents of the site where "Adobe eSign Workflow Config List" feature was activateds
+  - Find eSignConfig list in Site Contents of the site where "Adobe eSign Workflow Config List" feature was activated.
 
   - Example of filled out item:
   

@@ -59,7 +59,7 @@
 		
 		 ![alt text](screenshots/adobe-sign-api-integration-key-permissions.PNG "Integration key permissions")
 		
-		- Get the key value by clickin on the link
+		- Get the key value by clicking on the Integration Key link
 		
 		![alt text](screenshots/adobe-sign-api-integration-key-value.PNG "Integration key value")
 		
@@ -80,7 +80,7 @@ If the workflow is started by the user who has access to eSignConfig list, then 
 	
 - Give the workflow service principal permissions in **_layouts/15/appinv.aspx** similar to what we did with actual app.
 
-      	![alt text](screenshots/sharepoint-designer-app-step-give-permissions.PNG "Grant workflow app service principal permissions to the site")
+  ![alt text](screenshots/sharepoint-designer-app-step-give-permissions.PNG "Grant workflow app service principal permissions to the site")
 
 - Trust the Workflow service principal
 

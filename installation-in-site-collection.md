@@ -19,15 +19,18 @@
   - Example of filled out item:
   
 	![alt text](screenshots/office-365-eSign-config-list-item.png "eSign Config Item")
+  
   - create a new item with Title = "Config"
+  
   - spTenantID: - go to **Site Settings > Site App Permissions**.   For Workflow Entry copy the part after @    i:0i.t|ms.sp.ext|d559ac84-d8e6-4515-9229-8966b4554601@**870f107b-dc9d-47d3-9ad0-9d851a2e762e**    
+  
   - spClientID and spClientSecret:
     - append the following URL after site **_layouts/15/appregnew.aspx** and generate id and secret using Register page.   This puts a new service principal in Azure AD.  You can reuse the same principal across site collections:
     ![alt text](screenshots/office-365-app-register.PNG "Register service principal for the app")
     
     - Grant the new service principal permissions to the site by going to **_layouts/15/appinv.aspx**.  This has to be done on every site where workflows will run.
       ![alt text](screenshots/office-365-app-grant-permissions.PNG "Grant app service principal permissions to the site")
-      - Note: The app will elevate the user to run with app permissions:
+      - Note: The app will elevate the user to run with app permissions (Full control in example below.   You can reduce the permission grant to allow full control of a site or lesser level):
       
         ```XML	   
       	<AppPermissionRequests AllowAppOnlyPolicy="true">
@@ -38,8 +41,22 @@
          ![alt text](screenshots/office-365-app-grant-permissions-trust.PNG "Trust the app")
       - You should see a result in **Site Settings > Site App Permissions**
         ![alt text](screenshots/office-365-app-grant-permissions-result.PNG "Result of app principal permission grant")
-    - eSignIntegrationKey - generate in Adobe Sign admin
-    - eSignConnectorURL  -  https://spintegration.echosign.com/sharepoint
+		
+    
+	- eSignIntegrationKey - generate in Adobe Sign admin.
+	
+		- Go to Account > Adobe Sign API > API Information
+         ![alt text](screenshots/adobe-sign-api-integration-key.png "API Information")
+		 
+		- Create a new key with specific permissions:
+		
+		 ![alt text](screenshots/adobe-sign-api-integration-key-permissions.png "Integration key permissions")
+		
+		- Get the key value by clickin on the link
+		
+		![alt text](screenshots/adobe-sign-api-integration-key-value.png "Integration key value")
+		
+	- eSignConnectorURL  -  https://spintegration.echosign.com/sharepoint
     
     
 ##Security considerations for reading eSignConfig list from workflow action:

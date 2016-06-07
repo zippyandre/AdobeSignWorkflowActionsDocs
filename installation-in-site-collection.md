@@ -53,15 +53,15 @@
 	- eSignIntegrationKey - generate in Adobe Sign admin.
 	
 		- Go to Account > Adobe Sign API > API Information
-         ![alt text](screenshots/adobe-sign-api-integration-key.png "API Information")
+         ![alt text](screenshots/adobe-sign-api-integration-key.PNG "API Information")
 		 
 		- Create a new key with specific permissions:
 		
-		 ![alt text](screenshots/adobe-sign-api-integration-key-permissions.png "Integration key permissions")
+		 ![alt text](screenshots/adobe-sign-api-integration-key-permissions.PNG "Integration key permissions")
 		
 		- Get the key value by clickin on the link
 		
-		![alt text](screenshots/adobe-sign-api-integration-key-value.png "Integration key value")
+		![alt text](screenshots/adobe-sign-api-integration-key-value.PNG "Integration key value")
 		
 	- eSignConnectorURL  -  https://spintegration.echosign.com/sharepoint
     

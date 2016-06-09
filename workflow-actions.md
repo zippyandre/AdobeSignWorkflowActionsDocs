@@ -7,7 +7,7 @@ Sentence: Send Agreement with library id: %1 (leave empty to send document) name
 | LibraryDocumentId    | In    | 1  |Leave this empty or use a library id from eSign account. See below.|
 | AgreementName        | In    | 2  |If using CurrentItem:Title, make sure that Title is not empty|
 | AgreementMessage     | In    | 3  ||
-| AgreementSender      | In    | 4  |Needs to be part of the eSign account|
+| AgreementSender      | In    | 4  |Needs to be an email addres that's part of the eSign account|
 | RecipientEmail(s)    | In    | 5  |See below|
 | RecipientRole        | In    | 6  ||
 | SignatureFlow        | In    | 7  ||
